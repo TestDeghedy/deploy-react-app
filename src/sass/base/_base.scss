@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+// break points
+
+$large-screen-1 : 92em;
+$large-screen-2 : 85em;
+$large-screen-3 : 76em;
+$large-screen-4 : 69em;
+$large-screen-5 : 55em;
+$large-screen-6 : 43em;
+
+
+
+:root {
+  --color-primary-first : rgb(255, 239, 186);
+  --color-primary-second : rgb(255, 255, 255);
+ 
+  --color-font-first : #a9aaab;
+  --color-font-second : #202124;
+
+  --box-shadow : 0 1rem 2rem rgba(0, 0, 0, .2);
+  --border : 1px solid var(--color-font-first);
+
+  --color-facebook : #1877F2;
+  --color-twitter : #1A91DA;
+  --color-instagram : #8a3ab9;
+  --color-linkidin : #0A66C2;
+  --color-github : #4078c0;
+  --color-behance : #1769ff;
+  --color-dev : #ED8B8A; 
+  
+  
+  --gradient-1 : linear-gradient(to right top, #8048a3, #964da8, #ac52ac, #c157af, #d65db1);
+  --gradient-2 : linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  --gradient-3 : linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+  --gradient-4 : linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+  --gradient-5 : linear-gradient(to right, rgb(15, 12, 41), rgb(48, 43, 99), rgb(36, 36, 62));
+
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;   
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--color-font-second);
+
+  
+
+  min-height: 100vh;
+}
+
+.background {
+  height: 120rem;
+  background-image: var(--gradient-1);
+
+}
+
+.background-about-color {
+  background-image: var(--gradient-1);
+}
+
+.background-contact-color {
+  background-image: var(--gradient-2);
+}
+
+.background-quotes-color {
+  background-image: var(--gradient-3);
+}
+
+.background-projects-color {
+  background-image: var(--gradient-4);
+}
+

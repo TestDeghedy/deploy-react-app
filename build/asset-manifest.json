@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/deploy-react-app/static/css/main.5a8f22bc.chunk.css",
+    "main.js": "/deploy-react-app/static/js/main.fc2cbe4f.chunk.js",
+    "main.js.map": "/deploy-react-app/static/js/main.fc2cbe4f.chunk.js.map",
+    "runtime-main.js": "/deploy-react-app/static/js/runtime-main.bb948f62.js",
+    "runtime-main.js.map": "/deploy-react-app/static/js/runtime-main.bb948f62.js.map",
+    "static/js/2.4e70a6f4.chunk.js": "/deploy-react-app/static/js/2.4e70a6f4.chunk.js",
+    "static/js/2.4e70a6f4.chunk.js.map": "/deploy-react-app/static/js/2.4e70a6f4.chunk.js.map",
+    "index.html": "/deploy-react-app/index.html",
+    "static/css/main.5a8f22bc.chunk.css.map": "/deploy-react-app/static/css/main.5a8f22bc.chunk.css.map",
+    "static/js/2.4e70a6f4.chunk.js.LICENSE.txt": "/deploy-react-app/static/js/2.4e70a6f4.chunk.js.LICENSE.txt",
+    "static/media/2048.940fb149.png": "/deploy-react-app/static/media/2048.940fb149.png",
+    "static/media/acm.417a97a9.jpg": "/deploy-react-app/static/media/acm.417a97a9.jpg",
+    "static/media/evaluate-news-nlp.a51893ce.png": "/deploy-react-app/static/media/evaluate-news-nlp.a51893ce.png",
+    "static/media/my-reads-react.8c67c0c2.png": "/deploy-react-app/static/media/my-reads-react.8c67c0c2.png",
+    "static/media/natours-landing-page.8e744704.png": "/deploy-react-app/static/media/natours-landing-page.8e744704.png",
+    "static/media/scene2.90e329da.jpg": "/deploy-react-app/static/media/scene2.90e329da.jpg",
+    "static/media/small-version.9f7f9823.jpg": "/deploy-react-app/static/media/small-version.9f7f9823.jpg",
+    "static/media/would-you-rather.9d4e1c6e.png": "/deploy-react-app/static/media/would-you-rather.9d4e1c6e.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bb948f62.js",
+    "static/js/2.4e70a6f4.chunk.js",
+    "static/css/main.5a8f22bc.chunk.css",
+    "static/js/main.fc2cbe4f.chunk.js"
+  ]
+}

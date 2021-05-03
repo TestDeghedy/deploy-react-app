@@ -1,0 +1,238 @@
+.sidebar {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+
+  }
+  
+  .sidebar-navbar {
+    list-style: none;
+
+    @media (max-width : $large-screen-5) {
+      display: flex;
+      flex-direction: row;
+      
+    }
+    @media (max-width : $large-screen-6) {
+      flex-wrap: wrap;
+      align-content:center;
+      margin :0;
+      line-height: .5rem;
+      align-items: center;
+    }
+  }
+  
+  .navbar-item:not(.navbar-item-last) {
+    margin-bottom: 4rem;
+
+    @media (max-width : $large-screen-5) {
+      margin-bottom: 0rem; 
+    }
+  }
+  
+  .navbar-item-first {
+    margin-top: 8rem;
+
+    @media (max-width : $large-screen-5) {
+      margin-top: 0rem;
+      
+    }
+  }
+  
+  .navbar-resume-link {
+    text-decoration: none;
+    color: currentColor;
+  
+  }
+  
+  .remove-link-style {
+    text-decoration: none;
+    color: currentColor;
+  
+  }
+  
+  .navbar-item {
+    font-size: 3.5rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding : 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+  
+    transition: all .5s;
+
+    @media (max-width : $large-screen-5) {
+      font-size: 2.2rem;
+      margin-top: 2rem;
+      
+    }
+
+    @media (max-width : $large-screen-6) {
+      margin-bottom: 3rem;
+    }
+    
+  }
+  
+  .navbar-item::before {
+    content: "";
+    position: absolute;
+    height: .5rem;
+    z-index: 5;
+    top : 80%;
+  }
+  
+  .navbar-item:hover::before {
+    animation: width-slide 1s cubic-bezier(.22,.68,0,1.71);
+    animation-fill-mode: forwards;
+  }
+  
+  .navbar-item:hover {
+    transform: translateX(1rem);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @media (max-width : $large-screen-6) {
+      transform: translateX(0px);
+    }
+  }
+  
+  @keyframes width-slide {
+    0% {
+      width: 0;
+    }
+  
+    100% {
+      width: 100%;
+    }
+  }
+  
+  .navbar-item-about:hover,
+  .navbar-item-about:hover::before {
+    background-image: var(--gradient-1);
+  }
+  
+  .navbar-item-contact:hover,
+  .navbar-item-contact:hover::before {
+    background-image: var(--gradient-2);
+  }
+  
+  .navbar-item-resume:hover,
+  .navbar-item-resume:hover::before {
+    background-image: var(--gradient-5);
+  }
+  
+  .navbar-item-projects:hover, 
+  .navbar-item-projects:hover::before {
+    background-image: var(--gradient-4);
+  }
+  
+  .navbar-item-quotes:hover,
+  .navbar-item-quotes:hover::before {
+    background-image: var(--gradient-3);
+  
+  }
+  
+  
+  .navbar-item-clicked {
+    transform: translateX(1rem);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .navbar-item-clicked::before {
+    
+    animation: width-slide 1s;
+    animation-fill-mode: forwards;
+  }
+  
+  .navbar-item-about-clicked,
+  .navbar-item-about-clicked::before {
+    background-image: var(--gradient-1);
+  } 
+  
+  .navbar-item-contact-clicked,
+  .navbar-item-contact-clicked::before {
+    background-image: var(--gradient-2);
+  } 
+  
+  .navbar-item-projects-clicked,
+  .navbar-item-projects-clicked::before {
+    background-image: var(--gradient-4);
+  } 
+  
+  .navbar-item-quotes-clicked,
+  .navbar-item-quotes-clicked::before {
+    background-image: var(--gradient-3);
+  } 
+  
+  .navbar-social {
+    margin-bottom: 2.5rem;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (max-width : $large-screen-5) {
+      margin-top: -2rem;
+    }
+  }
+  
+  .navbar-social-text {
+    font-size: 2rem;
+  }
+  
+  .navbar-social-icons-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-social-icons-container a:visited {
+    color : currentColor;
+  }
+  
+  .navbar-social-icons-container div {
+    cursor: pointer;
+    transition: all .3s;
+  }
+  
+  
+  .navbar-social-icons-container div:hover {
+    transform: translateY(2px);
+  }
+  
+  .navbar-social-icon-facebook:hover {
+    color: var(--color-facebook);
+  }
+  
+  .navbar-social-icon-twitter:hover {
+    color: var(--color-twitter);
+  }
+  
+  .navbar-social-icon-linkidin:hover {
+    color: var(--color-linkidin);
+  }
+  
+  .navbar-social-icon-github:hover {
+    color: var(--color-github);
+  }
+  
+  .navbar-social-icon-instagram:hover {
+    color: var(--color-instagram);
+  }
+  
+  .navbar-social-icon-behance:hover {
+    color: var(--color-behance);
+  }
+  
+  .navbar-social-icon-dev:hover {
+    color: var(--color-dev);
+  }
+  .navbar-social-icon-behance {
+    margin-left: .3rem;
+  }
+  

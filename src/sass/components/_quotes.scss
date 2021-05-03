@@ -1,0 +1,43 @@
+.quotes-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.quote-container {
+    margin: auto;
+    margin-top: 20rem;
+    display: flex;
+    flex-direction: column;
+    border : var(--border);
+    width: 80%;
+    padding: 3rem;
+    border-radius: 3rem;
+  
+  }
+  
+  .quote-quotation-mark {
+    font-size: 20rem;
+    display: flex;
+    align-items: center;
+    height: 5rem;
+  
+    margin : 6rem 0 -5rem -1rem;
+    
+  }
+  
+  .quote-content {
+    font-size: 2.5rem;
+    margin : 1rem 0 1rem 4rem;
+  }
+  
+  .quote-author {
+    font-size: 2rem;
+    color: var(--color-font-first);
+    margin-left: 4rem;
+  }
+  
+  .quote-button-next {
+    background: var(--gradient-4);
+  }
+  

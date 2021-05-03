@@ -1,0 +1,109 @@
+.project-card-container {
+  
+    display: flex;
+    width: 80%;
+    border-radius: 2rem;
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    
+    margin : auto;
+  
+    
+  }
+  
+  .project-card-img {
+    width: 40rem;
+    height: 40rem;
+    overflow: hidden;
+    flex: 0 1 60%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: var(--border);
+  
+    position: relative;
+  
+    transition: all .5s;
+  }
+  
+  .project-card-img-itself:hover {
+    filter: blur(1px);
+  }
+  
+  .project-card-img-itself {
+    height: 40rem;
+    transition : all .5s
+  }
+  
+  .project-card-img-itself:hover {
+    transform: scale(1.05) ;
+  }
+  
+  .project-card-img-header {
+    font-size: 3rem;
+    font-weight: 500;
+    position: absolute;
+    opacity: 0;
+    
+    transition: opacity .5s;
+  }
+  
+  .project-card-img-itself:hover + .project-card-img-header {
+    opacity: 1;
+  }
+  
+  .project-card-secondary-container {
+    flex : 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+    background-color: #FAEA96;
+  }
+  
+  .project-card-description {
+    flex : 0 1 80%;
+    border-bottom: var(--border);
+  
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  .project-card-description-paragraph {
+    font-size: 1.25rem;
+    padding: 1rem .5rem 0rem 1rem;
+  }
+  
+  .project-card-description-paragraph:first-child {
+    margin-top: 2rem;
+  
+  }
+  
+  .project-card-link-itself {
+    text-decoration: none;
+    color: currentColor;
+    font-size: 2.3rem;
+    flex : 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: var(--border);
+  
+    transition: all .5s;
+
+    @media (max-width : $large-screen-3) {
+      font-size: 1.8rem;
+    }
+    @media (max-width : $large-screen-6) {
+      font-size: 1.3rem;
+    }
+  }
+  
+  .project-card-link-itself:hover {
+    background-color: #fdf2ba;
+    transform: translateX(3px);
+  }
+  
